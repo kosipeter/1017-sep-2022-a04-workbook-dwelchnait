@@ -1,0 +1,123 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+
+/* make a specific class with your css rule
+*/
+.nav-background {
+    background-color: #ddd;
+}
+
+
+/* use decendant selectors
+
+you use a DRILL DOWN approach to isolating the html you wish to apply your rules
+
+example
+    within the nav area, the url is to get the following rules
+*/
+nav ul{
+    background-color: #ddd;
+} 
+
+
+nav ul li{
+    border-bottom: 1px solid black;
+}
+
+/* child selectors
+
+this is a element selector within another element that is NOT necessarily directly below
+ the parent element selector
+
+ upper html element (parent)
+    within the Parent some html element
+ */
+
+ main p{
+    font-style: italic;
+ }
+
+
+
+/* to remove the underlink of an anchor tag:  text-decoration: none;
+   change the text color of the anchor tag to #333
+   apply only to the navigational menu
+*/
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* make any text in my footer white*/
+
+footer,
+footer a{
+    color:white;
+}
+
+/*
+Classes
+
+syntax for nameing is .user-name{rules}
+you at NOT using element names
+user name must be meaningful
+classes can be attached to any element
+classes are independenet of an element
+on html page to use:   class="user-name [user-name]"
+
+types: user (targetted) class
+       psuedo class, these are attach to elements
+
+anchor tag has several psuedo classes
+NOTE! the order in which your code your psuedo classes for the anchor is EXTREMELY IMPORTANT
+
+a:link unused link
+a:hover used when your cursor hovers over the anchor tag link
+a:visited used when the anchor tag link has been click on previously
+a:active used when you are actually clicking the anchor tag link
+*/
+
+nav ul li a:hover{
+    color:blue;
+    font-weight: bold;
+    font-size:larger;
+}
+nav ul li a:active{
+    color:red;
+    /* font-weight: bold;
+    font-size:larger; */
+}
+
+.bulletremoval{
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* targetted class 
+   element.classname
+*/
+nav ul.bulletremoval{
+    /* list-style-type: none; */
+    padding: 10px;
+}
+
+/* id selector
+
+similar to a class selector BUT is suppose to be use
+   only once on a page where as a class may be used
+   multiple times
+syntax #user-name{rules}
+on the html page:   id="user-name"
+
+
+
+
+
+
+
+
+
+
