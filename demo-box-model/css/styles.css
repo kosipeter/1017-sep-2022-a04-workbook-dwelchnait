@@ -1,0 +1,86 @@
+/************************************************
+
+margin: the outter most part of the box
+        represents separation BETWEEN boxes
+        horizontal margins are added together
+        vertical margins are COLLASPED
+                if the vertical margins are positive then
+                then larger of the two margins are used
+
+margin can be coded in various styles
+long hand: margin-top: size; margin-right: size; margin-bottom: size; margin-left: size;
+equal opposite sides: margin: tb rl;
+short hand unequal: margin: t r b l; 
+short hand equal: margin: size;
+
+**************************************************/
+
+.margin-section{
+    /* margin: 24px 12px; */
+    margin: 24px 12px 24px 12px;
+}
+
+/************************************************
+
+border: the second part of the box
+        represents outer displayable edge of boxes
+
+border can be coded in various styles
+long hand: border-width: size; border-style: sytle; border-color: #111;
+short hand: border: size style color;
+
+**************************************************/
+
+.border-section{
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: black; */
+    border: 3px solid black;
+}
+
+/************************************************
+
+padding: the inside part of the box
+        represents separation BETWEEN border and content
+
+padding can be coded in various styles
+long hand: padding-top: size; padding-right: size; padding-bottom: size; padding-left: size;
+equal opposite sides: padding: tb rl;
+short hand unequal: padding: t r b l; 
+short hand equal: padding: size;
+
+**************************************************/
+
+.padding-section{
+    padding: 24px;
+}
+
+/***************************************************
+
+content: by default this is the display area of your
+            element content.
+        the size of the content area is dependent on
+            whether there are margin, border and/or
+            padding specified for the element.
+        
+calculation page-width = lm + lb + lp + content + rp + rb + rm
+
+samples:   960 = 0 + 0 + 0 + content + 0 + 0 + 0 
+           960 -( 0 + 0 + 0 + 0 + 0 + 0) = content 
+           960 = content
+
+           960 = 24 + 3 + 12 + content + 12 + 3 + 24
+           960 - (24 + 3 + 12 + 12 + 3 + 24) = content 
+           960 - 78 = content 
+           882 = content
+
+you can specify your content area using width: size;
+
+***************************************************/
+
+.width-section{
+    margin: 24px;
+    padding: 12px;
+    border: 3px solid red;
+    width: 700px;
+}
