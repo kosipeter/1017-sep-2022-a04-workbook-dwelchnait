@@ -8,3 +8,62 @@ body {
 	font-size: 100%;
 	line-height: 1.5;	
 }
+
+h1, h2, h3, p{
+	font-family: Helvetica;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+nav{
+	margin-top: 24px;
+	height: 48px;
+	background-color: #f4f4f4;
+}
+
+header{
+	margin-top: 24px;
+	height: 450px;
+	background-color: #f4f4f4;
+}
+
+main{
+	margin-top: 24px;
+	padding: 24px;
+	background-color: #f4f4f4;
+}
+
+footer{
+	margin-top: 24px;
+	margin-bottom: 50px;
+	height: 300px;
+	background-color: #c3c3c3;
+}
+
+header section{
+	height: 450px;
+	margin-top: 24px;
+	background-color: #f4f4f4;
+}
+
+/************************************************************
+  calculate the width
+	960 = 24 + 24 + section
+	960 = 48 + 0 + 24 + 0 + width + 0 + 0 + 0
+	960 = 72 + width
+	960 - 72 = width
+	888 = width
+
+
+
+*************************************************************/
+main section,
+main aside {
+	border-left: 24px solid #c3c3c3;
+	margin-top: 24px;
+	background-color: #dedede;
+	height: 300px;
+	width:888px;
+}
+
