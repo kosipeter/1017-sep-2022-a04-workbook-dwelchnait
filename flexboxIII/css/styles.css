@@ -41,17 +41,18 @@ body {
         Layout
 
 criteria:
-margin 30px between outter edges and boxes (red and blue and green)
-margin 30px between the boxes (red and blue and green)
+margin 10px between outter edges and boxes (red and blue and green)
+margin 10px between the boxes (red and blue and green)
+border of 2px around boxes and main
 
 
 calculations:
- 960 = (lm +lb + lp + content + rp + rb + rm) + (lm +lb + lp + content + rp + rb + rm)
- 960 = 3 * (30 + 0 + 0 + content + 0 + 0 + 0)  + 30
- 960 = 120 + 3 * content
- 960 - 120 = 3 * content
- 840 / 3 = content
- 280 = content
+ 960 = 3(lm +lb + lp + content + rp + rb + rm) + remainder
+ 960 = 3 * (10 + 2 + 0 + content + 0 + 2 + 0)  + 14  (margin of 10 and main border of 4)
+ 960 = 56 + 3 * content
+ 960 - 56 = 3 * content
+ 904 / 3 = content
+ 301.333 = content
 
  
  ***************************************************************/
@@ -61,7 +62,7 @@ calculations:
     background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
-    /* padding: 10px 0; */
+    border: 2px solid black;
  }
 
 /*********************************************
@@ -71,9 +72,10 @@ calculations:
 ********************************************/
 
  main div{
-    margin: 30px 0 30px 30px;
-    width: 280px;
+    margin: 10px 0 10px 10px;
+    width: 301.333px;
     height: 300px;
+    border: 2px solid black;
  }
 
  .red-paint{
