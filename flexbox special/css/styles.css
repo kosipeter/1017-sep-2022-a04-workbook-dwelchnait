@@ -47,12 +47,12 @@ border of 2px around boxes and main
 
 
 calculations:
- 960 = 3(lm +lb + lp + content + rp + rb + rm) + remainder
- 960 = 3 * (10 + 2 + 0 + content + 0 + 2 + 0)  + 14  (margin of 10 and main border of 4)
- 960 = 56 + 3 * content
- 960 - 56 = 3 * content
- 904 / 3 = content
- 301.333 = content
+ 960 = (lm +lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + lp + lb + lm) + remainder
+ 960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + (10 + 2 + 0 + content + 0 + 2 + 0) + 14  
+ 960 = 192 +  content
+ 960 - 192 =  content
+ 
+ 768 = content
 
  
  ***************************************************************/
@@ -71,20 +71,19 @@ calculations:
     value of 300px
 ********************************************/
 
-/********************************************
- change the decendant element to a class
-    main div -> .boxsize
-
- if this is done, the class needs to be specified
-    on the div tag
-**********************************************/
- .boxsize{
+ .asidesize{
     margin: 10px 0 10px 10px;
-    width: 301.333px;
-    height: 300px;
+    width: 150px;
+    height: 600px;
     border: 2px solid black;
  }
 
+ .contentsize{
+    margin: 10px 0 10px 10px;
+    width: 768px; 
+    height: 292px;
+    border: 2px solid black;
+ }
  .red-paint{
     background-color: red;
  }
