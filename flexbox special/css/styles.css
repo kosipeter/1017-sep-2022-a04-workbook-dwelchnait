@@ -48,10 +48,9 @@ border of 2px around boxes and main
 
 calculations:
  960 = (lm +lb + lp + content + rp + rb + rm) + (lm + lb + lp + content + lp + lb + lm) + remainder
- 960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + (10 + 2 + 0 + content + 0 + 2 + 0) + 14  
+ 960 = (10 + 2 + 0 + 150 + 0 + 2 + 0) + (10 + 2 + 0 + content + 0 + 2 + 0) + (10 + 2 + 2)  
  960 = 192 +  content
  960 - 192 =  content
- 
  768 = content
 
  
@@ -78,10 +77,28 @@ calculations:
     border: 2px solid black;
  }
 
+ /*****************************************************
+  the height of the right column items can use a similiar
+     calculation as the horizontal layout
+
+  the one item you MUST remember is that the vertical margin (VM)
+    between items are collapsed
+  the largest vm is used between any two single items
+
+  600 = 2(tb + tp + content + bp + bb) + vm 
+  600 = 2(2 + 0 + content + 0 + 2) + 10
+  600 = 2 * 4 + 10 + 2 * content
+  600 = 18 + 2content
+  582 /2 = content
+  291
+
+  this ONLY works because the content area of the vertical
+    boxes are equal
+ ******************************************************/
  .contentsize{
     margin: 10px 0 10px 10px;
     width: 768px; 
-    height: 292px;
+    height: 291px;
     border: 2px solid black;
  }
  .red-paint{
