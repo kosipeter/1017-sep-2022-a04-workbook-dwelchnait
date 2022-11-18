@@ -1,0 +1,100 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+	text-align: center;
+}
+/* the default fill for background is repeat
+   repeat is in both x and y axis
+   repeat-x only along x axis
+   repeat-y only along y axis
+   none   */
+.page-header{
+	background: url(../img/header-background.png) repeat-x;
+}
+
+.hidden{
+	display: none;
+}
+
+/*********************************************************
+	typography
+*********************************************************/
+/* convert pt to pixel 
+    pt * 1.3333 = px
+	48 * 1.3333 = 64 px
+*/
+h2{
+	font-size: 64px;
+}
+
+/* convert pt to pixel 
+    pt * 1.3333 = px
+	36 * 1.3333 = 48 px
+*/
+footer h3{
+	font-size: 48px;
+}
+
+h2, h3{
+	color: #0b777b;
+}
+
+/* convert pt to pixel 
+    pt * 1.3333 = px
+	16 * 1.3333 = 22 px
+*/
+section > p{
+	color: #7f8c8c;
+	font-size: 22px;
+}
+/* convert pt to pixel 
+    pt * 1.3333 = px
+	14 * 1.3333 = 18.66666 px
+*/
+span{
+	font-size: 18.6px;
+	color: #378184;
+	font-weight: bolder;
+}
+
+strong{
+	color:#094244;
+	font-weight: bold;
+}
+
+section footer img{
+	vertical-align: middle;
+}
+
+/*********************************************************
+	layout
+*********************************************************/
+
+section{
+	margin-top: 70px;
+}
+
+/* element1 element2 syntax means any element2 regardless of
+     nesting is affected*/ 
+section footer{
+	margin-top: 24px;
+}
+section footer span{
+	margin: 0 20px;
+}
+
+footer img{
+	margin: 0 5px;
+}
+
+/* element1 > element2 syntax means any element2 immediately with element1
+ (next level) is affected*/ 
+main > footer{
+	margin: 70px 0 24px 0;
+}
