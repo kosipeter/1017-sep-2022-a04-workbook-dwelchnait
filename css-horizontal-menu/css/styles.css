@@ -1,0 +1,133 @@
+body {
+	background-color: white;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+	font-size:100%;
+    line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+	color: #f1f7f6;
+}
+
+.visuallyhidden {
+	display: none;
+}
+/*
+
+
+*/
+
+/***********************************************
+		header which contains the horizontal menu
+***********************************************/
+header{
+	background-color: #028568;
+}
+
+header .logo{
+	margin: 10px;
+}
+
+nav a{
+	text-decoration: none;
+	color:#f1f7f6;
+}
+
+nav li{
+	font-size: 18px;
+	margin-right: 30px;
+	line-height: 75px;
+}
+
+nav ul{
+	display: flex;
+}
+
+header{
+	display:flex;
+}
+
+header nav{
+	margin-left: 206px;    	
+}
+
+header a:hover{
+	border-bottom: 2px solid #abddd5;
+	font-weight: bolder;
+}
+
+/***********************************************
+		general settings for main
+************************************************/
+.banner{
+	font-size:18px;
+	background-image: url("../img/island-bg.jpg");
+	display: flex;
+}
+
+/**********************************************
+		left colum	
+***********************************************/
+.left-column{
+	width: 414px; /* 578 - 2(82) padding */
+	padding: 85px 82px 0 82px;
+	text-align: center;
+}
+
+.left-column h2{
+	font-size: 36px;
+	font-family: 'Alegreya', serif;
+	color: #f1f7f6;
+	margin-bottom: 38px;
+}
+
+.banner .bar{
+	width:414px;
+	height:8px;
+	background-color: #abddd5;
+	margin-bottom: 35px;
+}
+
+/******************************************
+		right column
+******************************************/
+
+.right-column{
+	width: 216px;/* 382 - 2(83) */
+	padding:85px 83px 0 83px;
+	/* for the background color, we will specify the color using rgba
+	rgba is red, green, blue, transparency (0.0 < x < 1.0)
+	*/
+	background-color: rgba(171,221,223,0.8);
+}
+.right-column h2{
+	font-size: 36px;
+	font-family: 'Alegreya', serif;
+	color: #f1f7f6;
+	line-height: 44px;
+	margin-bottom: 35px;
+}
+
+.right-column a{
+	padding: 9px 38px;
+	text-decoration: none;
+	text-align: center;
+	color: #028568;
+	background-color: #fff;
+	/* round the corners of the element */
+	border-radius: 6px;
+	margin-bottom: 60px;
+	/* an anchor element is an in-line element which margin-bottom does not directly affect
+	   solution: change the display style of the element to be blocked
+	*/
+	display: inline-block;
+}
+
+.right-column a:hover{
+	/* font-size:larger; */
+	font-weight: bolder;
+	color:forestgreen;
+	background-color: chartreuse;
+}
