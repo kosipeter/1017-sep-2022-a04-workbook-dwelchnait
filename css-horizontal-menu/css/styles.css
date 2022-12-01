@@ -81,6 +81,7 @@ header a:hover{
 	font-family: 'Alegreya', serif;
 	color: #f1f7f6;
 	margin-bottom: 38px;
+
 }
 
 .banner .bar{
@@ -96,7 +97,7 @@ header a:hover{
 
 .right-column{
 	width: 216px;/* 382 - 2(83) */
-	padding:85px 83px 0 83px;
+	padding: 85px  83px 0 83px;
 	/* for the background color, we will specify the color using rgba
 	rgba is red, green, blue, transparency (0.0 < x < 1.0)
 	*/
